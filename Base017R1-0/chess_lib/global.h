@@ -1,4 +1,4 @@
-#pragma once																		///<	防止重复引用机制
+#pragma once																		///<	防止重复引用头文件机制
 
 #pragma warning(disable:4251)														///<	all / off pair<int,int> 为模板类，在推倒导出DLL的时候会有警告
 
@@ -16,7 +16,7 @@
 #include<list>																		///<	链表容器
 using namespace std;																///<	std命名空间
 
-typedef int IdType;																	///<	ID类型
+typedef int IdType;																	///<	重命名整数类型为IDType类型
 typedef vector<vector<int>> Matrix;													///<	vector套vector,二维数组
 typedef pair<int, int> Position;													///<	位置模板类
 typedef pair<Position, Position> MoveOnce;											///<	当前位置，目标位置，移动一次，pair模板类	
